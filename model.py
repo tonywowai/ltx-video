@@ -1117,7 +1117,7 @@ class MyModel(AIxBlockMLBase):
                     repo_id="stabilityai/stable-diffusion-2-1",
                     repo_type="model",
                     allow_patterns=["unet/*"],  
-                    local_dir="./data/checkpoint/unet", 
+                    local_dir= "./data/checkpoint/Lightricks/LTX-Video/unet",
                 )
                 args = {
                             "ckpt_dir": "Lightricks/LTX-Video",
@@ -1184,8 +1184,8 @@ class MyModel(AIxBlockMLBase):
                     media_items = None
 
                 # Paths for the separate mode directories
-                ckpt_dir = Path(args['ckpt_dir'])
-                unet_dir ="./data/checkpoint/unet"
+                ckpt_dir = "./data/checkpoint/Lightricks/LTX-Video" #Path(args['ckpt_dir'])
+                unet_dir =ckpt_dir /  "unet"
                 vae_dir = ckpt_dir / "vae"
                 scheduler_dir = ckpt_dir / "scheduler"
                 
