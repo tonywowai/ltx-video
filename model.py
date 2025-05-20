@@ -1,32 +1,14 @@
 # #model_marketplace.config
 # {"framework": "transformers", "dataset_format": "llm", "dataset_sample": "[id on s3]", "weights": [
 #     {
-#       "name":"black-forest-labs/FLUX.1-dev",
-#       "value": "black-forest-labs/FLUX.1-dev",
-#       "size": 300,
-#       "paramasters": "12B",
-#       "tflops": 14,
-#       "vram": 19, # 16 + 15%
-#       "nodes": 1
-#     },
-#     {
-#       "name":"black-forest-labs/FLUX.1-schnell",
-#       "value": "black-forest-labs/FLUX.1-schnell",
-#       "size": 120,
-#       "paramasters": "12B",
-#       "tflops": 14,
-#       "vram": 19,
-#       "nodes": 1
-#     },
-#     {
-#       "name":"multimodalart/FLUX.1-dev2pro-full",
-#       "value": "multimodalart/FLUX.1-dev2pro-full",
+#       "name":"Lightricks LTX-Video",
+#       "value": "Lightricks/LTX-Video",
 #       "size": 200,
 #       "paramasters": "12B",
-#       "tflops": 14,
-#       "vram": 40,
-#       "nodes": 2
-#     },
+#       "tflops": 30,
+#       "vram": 42, # 16 + 15%
+#       "nodes": 1
+#     }
 #   ], "cuda": "11.4", "task":["text-to-image"]}
 
 import asyncio
