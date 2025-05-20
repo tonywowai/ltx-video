@@ -2,18 +2,18 @@ import os
 
 # import torch
 # from diffusers import BitsAndBytesConfig, FluxPipeline, FluxTransformer2DModel
-from huggingface_hub import HfFolder
+# from huggingface_hub import HfFolder
 
 # ---------------------------------------------------------------------------
 # Đặt token của bạn vào đây
-hf_token = os.getenv("HF_TOKEN", "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")
-# Lưu token vào local
-HfFolder.save_token(hf_token)
+# hf_token = os.getenv("HF_TOKEN", "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")
+# # Lưu token vào local
+# HfFolder.save_token(hf_token)
 
-from huggingface_hub import login
+# from huggingface_hub import login
 
-hf_access_token = "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"
-login(token=hf_access_token)
+# hf_access_token = "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"
+# login(token=hf_access_token)
 
 
 # def _load():
