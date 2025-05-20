@@ -9,7 +9,7 @@
 #       "vram": 42, # 16 + 15%
 #       "nodes": 1
 #     }
-#   ], "cuda": "11.4", "task":["text-to-image"]}
+#   ], "cuda": "11.4", "task":["text-to-video","image-to-video"]}
 
 import asyncio
 import base64
