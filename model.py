@@ -1094,12 +1094,13 @@ class MyModel(AIxBlockMLBase):
                 import tempfile
                 logger = logging.get_logger(__name__)
                 logger.info("Starting LTX Video generation...")
-                snapshot_download("Lightricks/LTX-Video", local_dir=model_path, local_dir_use_symlinks=False, repo_type='model')
+                snapshot_download("Lightricks/LTX-Video", local_dir=model_path, local_dir_use_symlinks=False, repo_type='model',token="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")
                 snapshot_download(
                     repo_id="stabilityai/stable-diffusion-2-1",
                     repo_type="model",
                     allow_patterns=["unet/*"],  
                     local_dir= "./data/checkpoint/Lightricks/LTX-Video/unet",
+                    token="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"
                 )
                 args = {
                             "ckpt_dir": "Lightricks/LTX-Video",
